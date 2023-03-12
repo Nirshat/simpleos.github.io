@@ -1,0 +1,105 @@
+*{
+    font-family: sans-serif;
+}
+
+.main-container > *{
+    /* border: 1px solid gray; */
+    padding:20px;
+    /* width:100%; */
+}
+
+
+.menu{
+    width:100%;
+}
+
+.menu > span{
+    letter-spacing:3px;
+    font-weight:bold;
+    font-size: larger;
+}
+
+.entry{
+    width:100%;
+}
+
+.entry-holder{
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    /* border: 1px solid; */
+}
+
+.entry-holder > *{
+    margin:4px 2px 4px 2px;
+}
+
+.label{
+    border: 1px solid #ccc;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+}
+
+.input-holder{
+    display: flex;
+    /* border: 1px solid; */
+    width:100%;
+}
+.input-holder > input{
+    width: 100%;
+    font-size:18px;
+}
+.input-holder > * {
+    margin: 2px;
+}
+
+.qnt{
+    padding:4px;
+    width:5%;
+    border: 1px solid gray;
+}
+
+.input-holder > button{
+    font-weight: bolder;
+}
+
+
+
+
+.container2 > #display-area{
+    border: 1px solid;
+    padding:10px;
+    font-weight: bold;
+    color:#4d4d4d;
+}
+
+.payment-area > *{
+    font-size: 20px;
+    margin:5px;
+    font-weight: bold;
+}
+
+#balance{
+    padding:5px;
+}
+
+#clear-btn{
+    font-size:20px;
+    padding: 4px 20px 4px 20px;
+}
+
+
+@media screen and (min-width:1000px) {
+    .main-container{
+        display: flex;
+        /* border: 1px solid gray; */
+    }
+
+    .entry{
+        width:75%;
+    }
+
+    .main-container > *{
+        width:100%;
+    }
+}
