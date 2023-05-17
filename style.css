@@ -2,6 +2,22 @@
     font-family: sans-serif;
 }
 
+hr{
+    border:1px solid #ccc;
+}
+
+body{
+    background-image:url("./assets/jollibee-bg.webp");
+    background-size: cover;
+    margin:0;
+    padding:0;
+}
+
+.main-container{
+    /* background-color:#0808086b; */
+    height:100%;
+}
+
 .main-container > *{
     /* border: 1px solid gray; */
     padding:20px;
@@ -10,17 +26,32 @@
 
 
 .menu{
-    width:100%;
+    padding:10px;
+    background:#00000059;
 }
 
-.menu > span{
+.menu h3{
+    color:#fff;
+}
+
+#menulist{
+    display:grid;
+    grid-template-columns:repeat(2, 1fr);
+    background: #00000056;
+    padding:15px;
+    /* border:1px solid; */
+}
+
+.menu #menulist span{
     letter-spacing:3px;
     font-weight:bold;
     font-size: larger;
+    color:#fff;
 }
 
 .entry{
-    width:100%;
+    background:#00000070;
+    padding:15px;
 }
 
 .entry-holder{
@@ -35,9 +66,11 @@
 
 .label{
     border: 1px solid #ccc;
+    background: #00000041;
     display: flex;
     justify-content:center;
     align-items: center;
+    color:#fff;
 }
 
 .input-holder{
@@ -48,6 +81,10 @@
 .input-holder > input{
     width: 100%;
     font-size:18px;
+    padding:10px;
+    background:#b6b6b670;
+    border:none;
+    color:#fff;
 }
 .input-holder > * {
     margin: 2px;
@@ -59,35 +96,73 @@
     border: 1px solid gray;
 }
 
-.input-holder > button{
+.input-holder  button{
     font-weight: bolder;
+    padding:10px 20px 10px 20px;
+    /* background: #0000008e; */
+    color:#fff;
+    font-size:18px;
+    border:none;
+    transition:.3s ease-out 60ms;
+}
+
+.input-holder  button:nth-child(2){
+    background: #00c95a;
+    background: #00c95a94;
+}
+.input-holder  button:nth-child(2):hover{
+    background: #00c95a;
+}
+
+
+.input-holder  button:nth-child(3){
+    background: red;
+    background: #ff00009a;
+}
+.input-holder  button:nth-child(3):hover{
+    background: red
 }
 
 
 
-
 .container2 > #display-area{
-    border: 1px solid;
+    /* border: 1px solid; */
     padding:10px;
     font-weight: bold;
-    color:#4d4d4d;
+    color:#ffffff;
+    background:#00000073;
+}
+
+.payment-area{
+    background: #00000070;
+    padding:10px;
 }
 
 .payment-area > *{
     font-size: 20px;
     margin:5px;
     font-weight: bold;
+    color:#fff;
 }
 
 #balance{
     padding:5px;
+    width:60%;
+    background:#b6b6b670;
+    border:none;
+    padding:10px;
 }
 
 #clear-btn{
     font-size:20px;
-    padding: 4px 20px 4px 20px;
+    padding: 10px 20px 10px 20px;
+    background: #ff00009a;
+    border:none;
+    color:#fff;
 }
-
+#clear-btn:hover{
+    background: red;
+}
 
 @media screen and (min-width:1000px) {
     .main-container{
@@ -96,7 +171,7 @@
     }
 
     .entry{
-        width:75%;
+        width:85%;
     }
 
     .main-container > *{
